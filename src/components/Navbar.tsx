@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-6 left-0 w-full z-50 px-6">
       <div className={`max-w-7xl mx-auto flex justify-between items-center transition-all duration-500 rounded-full px-8 py-3 border ${isScrolled ? 'bg-white/70 backdrop-blur-lg border-white/20 shadow-lg' : 'bg-white/10 backdrop-blur-md border-white/10'}`}>
         <Link to="/">
-          <Logo variant={isScrolled ? 'dark' : 'light'} size={28} />
+          <Logo variant={isScrolled ? 'dark' : 'light'} size={60} />
         </Link>
 
         {/* Desktop Menu */}
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
           >
             <X className="w-10 h-10" />
           </button>
-          <Logo variant="light" size={32} />
+          <Logo variant="light" size={80} />
           {navLinks.map((link) => (
             <Link
               key={link.name}

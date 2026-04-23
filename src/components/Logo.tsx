@@ -8,13 +8,12 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ variant = 'dark', size = 32 }) => {
   return (
     <img
-      src="/logo.svg"
+      src="/logo-wa.png"
       alt="WA Advogados"
-      height={size}
       style={{
         height: size,
         width: 'auto',
-        filter: variant === 'light' ? 'brightness(0) invert(1)' : 'none',
+        filter: variant === 'dark' ? 'brightness(0) contrast(100%)' : 'none',
       }}
     />
   );
