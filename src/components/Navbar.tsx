@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5511999999999";
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5531982074065";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+análise+do+meu+caso.`;
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WhatsAppFloat: React.FC = () => {
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5511999999999";
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5531982074065";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+análise+do+meu+caso.`;
 
   return (

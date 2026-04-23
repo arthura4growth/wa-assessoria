@@ -10,7 +10,7 @@ import { AlertCircle, CheckCircle2, TrendingUp } from 'lucide-react';
 const DireitoBancario: React.FC = () => {
   const container = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5511999999999";
+  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5531982074065";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+análise+do+meu+caso+de+Direito+Bancário.`;
 
   useEffect(() => {
