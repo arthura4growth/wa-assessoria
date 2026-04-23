@@ -53,14 +53,14 @@ const Hero: React.FC = () => {
             href={whatsappLink} 
             isExternal 
             variant="white" 
-            className="w-full sm:w-auto"
+            className="w-full sm:w-auto text-sm sm:text-base"
           >
             Falar com especialista
           </Button>
           <Button 
             href="#areas" 
             variant="outline" 
-            className="w-full sm:w-auto !text-white !border-white hover:!bg-white/10"
+            className="w-full sm:w-auto !text-white !border-white hover:!bg-white/10 text-sm sm:text-base"
           >
             Conhecer as áreas de atuação
           </Button>

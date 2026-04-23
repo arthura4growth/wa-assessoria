@@ -28,17 +28,14 @@ const Autoridade: React.FC = () => {
   const testimonials = [
     {
       name: "Ricardo Silva",
-      city: "São Paulo - SP",
       text: "Estava desesperado com a busca e apreensão do meu carro. A WA Assessoria agiu rápido e conseguiu reverter a situação. Extremamente profissionais."
     },
     {
       name: "Maria Oliveira",
-      city: "Rio de Janeiro - RJ",
       text: "O seguro negou a indenização após o falecimento do meu marido. Sem a WA, eu nunca teria conseguido meus direitos. Gratidão eterna."
     },
     {
       name: "João Pereira",
-      city: "Curitiba - PR",
       text: "Reduzi minha dívida bancária em mais de 60% com a ajuda deles. O atendimento pelo WhatsApp facilitou muito minha vida corrida."
     }
   ];
@@ -62,7 +59,6 @@ const Autoridade: React.FC = () => {
               </p>
               <div>
                 <h4 className="font-bold text-brand-navy">{t.name}</h4>
-                <p className="text-sm text-brand-blue font-medium uppercase tracking-wider">{t.city}</p>
               </div>
             </div>
           ))}

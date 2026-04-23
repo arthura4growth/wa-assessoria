@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
   href,
   isExternal = false
 }) => {
-  const baseStyles = "inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] will-change-transform text-center";
+  const baseStyles = "inline-flex items-center justify-center gap-2 px-6 py-3 md:px-8 md:py-4 rounded-full font-semibold transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] will-change-transform text-center !whitespace-nowrap !flex-nowrap min-w-max";
   
   const variants = {
     primary: "bg-brand-navy text-white hover:bg-brand-blue",
@@ -29,8 +29,8 @@ const Button: React.FC<ButtonProps> = ({
 
   const content = (
     <>
-      {children}
-      <ArrowUpRight className="w-5 h-5" />
+      <span className="!whitespace-nowrap">{children}</span>
+      <ArrowUpRight className="w-5 h-5 shrink-0" />
     </>
   );
 

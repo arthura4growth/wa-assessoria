@@ -21,31 +21,32 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Direito Bancário', path: '/direito-bancario' },
-    { name: 'Direito Securitário', path: '/direito-securitario' },
-    { name: 'Direito Trabalhista', path: '/direito-trabalhista' },
-    { name: 'Direito Previdenciário', path: '/direito-previdenciario' },
+    { name: 'Bancário', path: '/direito-bancario' },
+    { name: 'Securitário', path: '/direito-securitario' },
+    { name: 'Trabalhista', path: '/direito-trabalhista' },
+    { name: 'Previdenciário', path: '/direito-previdenciario' },
+    { name: 'Imóveis', path: '/regularizacao-de-imovel' },
   ];
 
   return (
     <nav className="fixed top-6 left-0 w-full z-50 px-6">
-      <div className={`max-w-7xl mx-auto flex justify-between items-center transition-all duration-500 rounded-full px-8 py-3 border ${isScrolled ? 'bg-white/70 backdrop-blur-lg border-white/20 shadow-lg' : 'bg-white/10 backdrop-blur-md border-white/10'}`}>
+      <div className={`max-w-7xl mx-auto flex justify-between items-center transition-all duration-500 rounded-full px-8 py-2 border ${isScrolled ? 'bg-white/70 backdrop-blur-lg border-white/20 shadow-lg' : 'bg-white/10 backdrop-blur-md border-white/10'}`}>
         <Link to="/">
-          <Logo variant={isScrolled ? 'dark' : 'light'} size={60} />
+          <Logo variant={isScrolled ? 'dark' : 'light'} size={isScrolled ? 50 : 60} />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               to={link.path}
-              className={`font-medium transition-colors hover:text-brand-blue ${isScrolled ? 'text-brand-navy' : 'text-white'}`}
+              className={`font-semibold text-sm transition-colors hover:text-brand-blue ${isScrolled ? 'text-brand-navy' : 'text-white'}`}
             >
               {link.name}
             </Link>
           ))}
-          <Button href={whatsappLink} isExternal variant={isScrolled ? "primary" : "white"} className="py-2 px-6 text-sm">
+          <Button href={whatsappLink} isExternal variant={isScrolled ? "primary" : "white"} className="py-2 px-5 text-xs">
             Falar com especialista
           </Button>
         </div>
@@ -74,7 +75,7 @@ const Navbar: React.FC = () => {
               key={link.name}
               to={link.path}
               onClick={() => setIsOpen(false)}
-              className="text-2xl font-bold text-white hover:text-brand-blue"
+              className="text-xl font-bold text-white hover:text-brand-blue"
             >
               {link.name}
             </Link>

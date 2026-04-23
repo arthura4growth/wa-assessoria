@@ -63,7 +63,7 @@ const ComoFunciona: React.FC = () => {
           
           {steps.map((step, index) => (
             <div key={index} className="step-item relative">
-              <div className="text-6xl font-bold text-brand-blue/20 mb-6 font-serif">
+              <div className="text-6xl font-bold text-brand-blue mb-6 font-serif opacity-40">
                 {step.num}
               </div>
               <h3 className="text-xl font-bold text-brand-navy mb-4 min-h-[3rem]">
