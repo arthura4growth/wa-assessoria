@@ -45,7 +45,7 @@ const CTAFinal: React.FC = () => {
               href={whatsappLink} 
               isExternal 
               variant="white" 
-              className="!px-12 !py-6 text-xl"
+              className="md:!px-12 md:!py-6 text-base md:text-xl w-full sm:w-auto"
             >
               Falar com especialista
             </Button>
