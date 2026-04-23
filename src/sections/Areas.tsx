@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
-import { Building2, ShieldCheck, Briefcase, HeartHandshake, ArrowRight } from 'lucide-react';
+import { Building2, ShieldCheck, Briefcase, HeartHandshake, Home, ArrowRight } from 'lucide-react';
 import SectionTag from '../components/SectionTag';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
@@ -70,6 +70,17 @@ const Areas: React.FC = () => {
         "Auxílio-doença e auxílio-acidente",
         "Revisão de benefícios em valor incorreto"
       ]
+    },
+    {
+      title: "Regularização de Imóvel",
+      icon: <Home className="w-12 h-12 text-brand-blue mb-6" />,
+      path: "/regularizacao-de-imovel",
+      topics: [
+        "Usucapião (urbano e rural)",
+        "Escritura e registro em cartório",
+        "Inventário e partilha de imóveis",
+        "Regularização de construções e averbações"
+      ]
     }
   ];
 
@@ -86,28 +97,37 @@ const Areas: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {areas.map((area, index) => (
-            <div key={index} className="area-card bg-white p-10 md:p-16 rounded-3xl shadow-sm border border-brand-blue-border hover:border-brand-blue transition-colors group">
-              {area.icon}
-              <h3 className="text-3xl font-semibold text-brand-navy mb-8">{area.title}</h3>
-              <ul className="space-y-4 mb-12">
-                {area.topics.map((topic, i) => (
-                  <li key={i} className="flex items-center gap-3 text-brand-navy-muted text-lg">
-                    <div className="w-1.5 h-1.5 rounded-full bg-brand-blue"></div>
-                    {topic}
-                  </li>
-                ))}
-              </ul>
-              <Link
-                to={area.path}
-                className="inline-flex items-center gap-2 text-brand-navy font-bold text-lg group-hover:text-brand-blue transition-colors"
-              >
-                Conhecer {area.title}
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-              </Link>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+          {areas.map((area, index) => {
+            const lgClass =
+              index < 3
+                ? 'lg:col-span-2'
+                : index === 3
+                ? 'lg:col-start-2 lg:col-span-2'
+                : 'lg:col-start-4 lg:col-span-2';
+
+            return (
+              <div key={index} className={`area-card bg-white p-10 md:p-16 rounded-3xl shadow-sm border border-brand-blue-border hover:border-brand-blue transition-colors group ${lgClass}`}>
+                {area.icon}
+                <h3 className="text-3xl font-semibold text-brand-navy mb-8">{area.title}</h3>
+                <ul className="space-y-4 mb-12">
+                  {area.topics.map((topic, i) => (
+                    <li key={i} className="flex items-center gap-3 text-brand-navy-muted text-lg">
+                      <div className="w-1.5 h-1.5 rounded-full bg-brand-blue"></div>
+                      {topic}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  to={area.path}
+                  className="inline-flex items-center gap-2 text-brand-navy font-bold text-lg group-hover:text-brand-blue transition-colors"
+                >
+                  Conhecer {area.title}
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

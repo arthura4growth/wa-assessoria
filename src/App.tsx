@@ -4,6 +4,7 @@ import DireitoBancario from './pages/DireitoBancario';
 import DireitoSecuritario from './pages/DireitoSecuritario';
 import DireitoTrabalhista from './pages/DireitoTrabalhista';
 import DireitoPrevidenciario from './pages/DireitoPrevidenciario';
+import RegularizacaoImovel from './pages/RegularizacaoImovel';
 import Navbar from './components/Navbar';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import Footer from './sections/Footer';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/direito-securitario" element={<DireitoSecuritario />} />
           <Route path="/direito-trabalhista" element={<DireitoTrabalhista />} />
           <Route path="/direito-previdenciario" element={<DireitoPrevidenciario />} />
+          <Route path="/regularizacao-de-imovel" element={<RegularizacaoImovel />} />
         </Routes>
         <Footer />
         <WhatsAppFloat />
