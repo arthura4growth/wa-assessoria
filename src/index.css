@@ -48,3 +48,21 @@ section {
 .will-change-animate {
   will-change: transform, opacity;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E8F1FB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A2647;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4A90E2;
+}
