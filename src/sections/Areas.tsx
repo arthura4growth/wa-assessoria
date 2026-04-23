@@ -127,8 +127,8 @@ const Areas: React.FC = () => {
           </div>
         </div>
 
-        <div className="embla" ref={emblaRef}>
-          <div className="embla__container flex gap-6">
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex gap-6">
             {areas.map((area, index) => (
               <div key={index} className="embla__slide flex-[0_0_90%] md:flex-[0_0_45%] lg:flex-[0_0_30%] min-w-0">
                 <div className="area-card bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-brand-blue-border hover:border-brand-blue transition-all h-full group flex flex-col">
