@@ -36,7 +36,7 @@ const DireitoSecuritario: React.FC = () => {
   return (
     <div ref={container}>
       <Helmet>
-        <title>Direito Securitário | WA Assessoria Jurídica</title>
+        <title>Direito Securitário | WA Advogados</title>
         <meta name="description" content="Seu seguro foi negado? Você pode ter direito à indenização. Especialistas em causas contra seguradoras." />
       </Helmet>
 

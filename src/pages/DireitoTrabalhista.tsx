@@ -5,13 +5,13 @@ import { gsap } from 'gsap';
 import Button from '../components/Button';
 import SectionTag from '../components/SectionTag';
 import { useReducedMotion } from '../hooks/useReducedMotion';
-import { AlertCircle, CheckCircle2, TrendingUp } from 'lucide-react';
+import { AlertCircle, CheckCircle2, Clock } from 'lucide-react';
 
-const DireitoBancario: React.FC = () => {
+const DireitoTrabalhista: React.FC = () => {
   const container = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = useReducedMotion();
   const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || "5511999999999";
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+análise+do+meu+caso+de+Direito+Bancário.`;
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Olá%2C+vim+pelo+site+e+gostaria+de+uma+análise+do+meu+caso+de+Direito+Trabalhista.`;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,19 +36,19 @@ const DireitoBancario: React.FC = () => {
   return (
     <div ref={container}>
       <Helmet>
-        <title>Direito Bancário | WA Advogados</title>
-        <meta name="description" content="Defesa contra abusos bancários, juros altos e busca e apreensão. Recupere o controle da sua vida financeira." />
+        <title>Direito Trabalhista | WA Advogados</title>
+        <meta name="description" content="Foi demitido de forma irregular ou não recebeu o que é seu por direito? Especialistas em ações trabalhistas, verbas rescisórias e assédio moral." />
       </Helmet>
 
       {/* Hero Page */}
       <section className="pt-40 pb-20 bg-brand-navy text-white">
         <div className="max-w-7xl mx-auto text-center px-6">
-          <SectionTag className="!bg-white/10 !text-white mb-8 reveal-up">Direito Bancário</SectionTag>
+          <SectionTag className="!bg-white/10 !text-white mb-8 reveal-up">Direito Trabalhista</SectionTag>
           <h1 className="text-4xl md:text-6xl font-semibold mb-8 leading-tight reveal-up">
-            Está sendo cobrado indevidamente pelo banco?
+            Foi demitido de forma irregular ou não recebeu o que é seu por direito?
           </h1>
           <p className="text-xl text-white/80 max-w-3xl mx-auto mb-12 reveal-up">
-            Não aceite abusos. Nossa equipe é especialista em identificar e combater cobranças ilegais, juros abusivos e ações de busca e apreensão.
+            Verbas rescisórias, horas extras, adicionais e indenizações — nenhum direito trabalhista deve ser ignorado. Nossa equipe atua para que você receba tudo o que é seu.
           </p>
           <div className="reveal-up">
             <Button href={whatsappLink} isExternal variant="white">Falar com especialista</Button>
@@ -63,14 +63,14 @@ const DireitoBancario: React.FC = () => {
             <div className="reveal-up">
               <SectionTag>O Problema</SectionTag>
               <h2 className="text-3xl md:text-4xl text-brand-navy mb-8">
-                Práticas abusivas que destroem seu patrimônio.
+                Irregularidades que custam caro ao trabalhador.
               </h2>
               <ul className="space-y-6">
                 {[
-                  "Juros muito acima do que foi contratado",
-                  "Tarifas embutidas sem o seu consentimento",
-                  "Cláusulas ilegais que dificultam a quitação",
-                  "Processos de busca e apreensão precipitados"
+                  "Demissões sem justa causa mal conduzidas",
+                  "Verbas rescisórias atrasadas ou pagas a menor",
+                  "Horas extras trabalhadas e nunca pagas",
+                  "Assédio moral e condições irregulares de trabalho"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4 text-brand-navy-muted text-lg">
                     <AlertCircle className="w-6 h-6 text-brand-blue shrink-0 mt-0.5" />
@@ -82,11 +82,11 @@ const DireitoBancario: React.FC = () => {
             <div className="bg-brand-blue-light p-12 rounded-[2rem] reveal-up">
               <h3 className="text-2xl font-bold text-brand-navy mb-6">A Consequência da Inércia</h3>
               <p className="text-lg text-brand-navy-muted leading-relaxed mb-8">
-                Se você não agir agora, sua dívida pode se tornar uma bola de neve imparável, levando à restrição total do seu nome e até à perda definitiva de bens conquistados com muito esforço.
+                A perda financeira é imediata, mas o impacto vai além do dinheiro: saúde mental, instabilidade e incerteza sobre o futuro. E há ainda o risco da prescrição — você tem apenas 2 anos após a demissão para ajuizar uma ação trabalhista.
               </p>
               <div className="flex items-center gap-4 text-brand-navy font-bold">
-                <TrendingUp className="w-8 h-8 text-brand-blue" />
-                <span>O tempo é seu maior inimigo em dívidas bancárias.</span>
+                <Clock className="w-8 h-8 text-brand-blue" />
+                <span>Prescrição trabalhista: 2 anos após a demissão.</span>
               </div>
             </div>
           </div>
@@ -99,15 +99,15 @@ const DireitoBancario: React.FC = () => {
           <div className="text-center mb-16 reveal-up">
             <SectionTag>Nossa Solução</SectionTag>
             <h2 className="text-3xl md:text-5xl text-brand-navy mb-6">
-              Como a WA Advogados protege você.
+              Atuação jurídica para recuperar o que é seu.
             </h2>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: "Ação Revisional", desc: "Analisamos cada vírgula do contrato para reduzir o valor real da sua dívida." },
-              { title: "Defesa em Busca", desc: "Ações rápidas para impedir ou reverter a apreensão do seu veículo ou imóvel." },
-              { title: "Repetição de Indébito", desc: "Recuperamos em dobro os valores que você pagou indevidamente ao banco." }
+              { title: "Ação Trabalhista", desc: "Reclamação na Justiça do Trabalho para cobrança de verbas rescisórias, horas extras, adicionais e reconhecimento de vínculo." },
+              { title: "Adicionais e Horas Extras", desc: "Cálculo e cobrança de insalubridade, periculosidade, adicional noturno e horas extras não pagas durante o contrato." },
+              { title: "Danos Morais", desc: "Indenização por assédio moral, discriminação ou condições degradantes de trabalho que causaram sofrimento comprovável." }
             ].map((sol, i) => (
               <div key={i} className="bg-white p-10 rounded-3xl border border-brand-blue-border reveal-up">
                 <CheckCircle2 className="w-12 h-12 text-brand-blue mb-6" />
@@ -126,8 +126,8 @@ const DireitoBancario: React.FC = () => {
             <h2 className="text-3xl md:text-4xl text-brand-navy mb-12">Como começamos a resolver?</h2>
             <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
               {[
-                "Análise do contrato",
-                "Cálculo pericial",
+                "Análise do caso",
+                "Levantamento de provas",
                 "Ação estratégica"
               ].map((step, i) => (
                 <div key={i} className="flex flex-col items-center gap-4">
@@ -148,4 +148,4 @@ const DireitoBancario: React.FC = () => {
   );
 };
 
-export default DireitoBancario;
+export default DireitoTrabalhista;

@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src="/hero_lawyer_office_1776896316439.png" 
-          alt="Escritório Jurídico WA Assessoria" 
+          alt="Escritório Jurídico WA Advogados" 
           className="w-full h-full object-cover"
           width="1920"
           height="1080"

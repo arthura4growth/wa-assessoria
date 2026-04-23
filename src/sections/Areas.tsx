@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
-import { Building2, ShieldCheck, ArrowRight } from 'lucide-react';
+import { Building2, ShieldCheck, Briefcase, HeartHandshake, ArrowRight } from 'lucide-react';
 import SectionTag from '../components/SectionTag';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
@@ -48,6 +48,28 @@ const Areas: React.FC = () => {
         "Defesa do consumidor perante seguradoras",
         "Sinistros não pagos ou subestimados"
       ]
+    },
+    {
+      title: "Direito Trabalhista",
+      icon: <Briefcase className="w-12 h-12 text-brand-blue mb-6" />,
+      path: "/direito-trabalhista",
+      topics: [
+        "Demissões sem justa causa ou irregulares",
+        "Verbas rescisórias não pagas",
+        "Horas extras e adicionais devidos",
+        "Assédio moral e danos morais no trabalho"
+      ]
+    },
+    {
+      title: "Direito Previdenciário",
+      icon: <HeartHandshake className="w-12 h-12 text-brand-blue mb-6" />,
+      path: "/direito-previdenciario",
+      topics: [
+        "Benefícios negados pelo INSS",
+        "Aposentadoria (idade, tempo de contribuição, especial)",
+        "Auxílio-doença e auxílio-acidente",
+        "Revisão de benefícios em valor incorreto"
+      ]
     }
   ];
 
@@ -60,7 +82,7 @@ const Areas: React.FC = () => {
             Especialistas em resolver o seu problema.
           </h2>
           <p className="text-xl text-brand-navy-muted max-w-2xl mx-auto">
-            Atuação estratégica focada em reestabelecer o equilíbrio entre você, bancos e seguradoras.
+            Atuação estratégica focada em reestabelecer o equilíbrio entre você, bancos, seguradoras, empregadores e o INSS.
           </p>
         </div>
 
@@ -77,8 +99,8 @@ const Areas: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <Link 
-                to={area.path} 
+              <Link
+                to={area.path}
                 className="inline-flex items-center gap-2 text-brand-navy font-bold text-lg group-hover:text-brand-blue transition-colors"
               >
                 Conhecer {area.title}

@@ -36,7 +36,7 @@ const Sobre: React.FC = () => {
           </div>
           <div className="text-lg text-brand-navy-muted leading-relaxed reveal-up">
             <p className="mb-6">
-              Sabemos que problemas financeiros e negativas injustas geram ansiedade, insegurança e urgência. A WA Assessoria atua com método, transparência e firmeza para proteger quem está do lado certo.
+              Sabemos que problemas financeiros e negativas injustas geram ansiedade, insegurança e urgência. A WA Advogados atua com método, transparência e firmeza para proteger quem está do lado certo.
             </p>
             <p>
               Traduzimos o jurídico para uma linguagem que você entende, e cuidamos de cada detalhe processual para que você recupere o controle da sua vida. Nossa missão é ser a ponte entre a injustiça e a solução definitiva.

@@ -15,8 +15,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>WA Assessoria Jurídica | Resolva problemas com Bancos e Seguros</title>
-        <meta name="description" content="Defesa especializada em Direito Bancário e Securitário. Recupere seu equilíbrio financeiro e seus direitos." />
+        <title>WA Advogados | Direito Bancário, Securitário, Trabalhista e Previdenciário</title>
+        <meta name="description" content="Defesa especializada em Direito Bancário, Securitário, Trabalhista e Previdenciário. Recupere seu equilíbrio financeiro e seus direitos." />
       </Helmet>
 
       <main>

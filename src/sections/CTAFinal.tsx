@@ -39,7 +39,7 @@ const CTAFinal: React.FC = () => {
               Seu caso merece uma análise especializada.
             </h2>
             <p className="text-white/80 text-xl mb-12">
-              Não deixe para depois o que pode custar caro hoje. Fale agora com a WA Assessoria e receba orientação jurídica direta pelo WhatsApp.
+              Não deixe para depois o que pode custar caro hoje. Fale agora com a WA Advogados e receba orientação jurídica direta pelo WhatsApp.
             </p>
             <Button 
               href={whatsappLink} 
