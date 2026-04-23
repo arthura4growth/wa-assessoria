@@ -27,14 +27,14 @@ const Sobre: React.FC = () => {
   return (
     <section id="sobre" ref={container} className="bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-20">
           <div>
             <SectionTag className="reveal-up">Sobre nós</SectionTag>
-            <h2 className="text-4xl md:text-5xl text-brand-navy mb-8 reveal-up">
+            <h2 className="text-4xl md:text-5xl text-brand-navy mb-4 md:mb-6 reveal-up">
               Compromisso com a sua tranquilidade e seus direitos.
             </h2>
           </div>
-          <div className="text-lg text-brand-navy-muted leading-relaxed reveal-up">
+          <div className="text-lg text-brand-navy-muted leading-relaxed reveal-up lg:mt-10">
             <p className="mb-6">
               Sabemos que problemas financeiros e negativas injustas geram ansiedade, insegurança e urgência. A WA Advogados atua com método, transparência e firmeza para proteger quem está do lado certo.
             </p>

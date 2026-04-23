@@ -41,14 +41,14 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-brand-navy/60 backdrop-blur-[2px]"></div>
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto text-center px-6 hero-content">
-        <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-semibold mb-8 leading-[1.2]">
+      <div className="relative z-10 max-w-5xl mx-auto md:text-center text-left px-6 hero-content">
+        <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-semibold mb-6 md:mb-8 leading-[1.2] max-w-4xl md:mx-auto">
           Resolva problemas com bancos e seguradoras com segurança jurídica.
         </h1>
-        <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto mb-12 font-normal leading-relaxed">
+        <p className="text-white/90 text-base md:text-xl max-w-2xl md:mx-auto mb-10 md:mb-12 font-normal leading-relaxed">
           Defesa especializada para quem enfrenta dívidas abusivas, busca e apreensão ou negativas de seguro. Atuação estratégica, acompanhamento do início ao fim.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-start md:items-center justify-start md:justify-center gap-4">
           <Button 
             href={whatsappLink} 
             isExternal 
