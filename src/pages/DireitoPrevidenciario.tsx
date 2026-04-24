@@ -44,7 +44,7 @@ const DireitoPrevidenciario: React.FC = () => {
       <section className="relative pt-40 pb-20 bg-brand-navy text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/modern_office_hallway_1776896513845.png" 
+            src="/hero-previdenciario.jpg" 
             alt="Direito Previdenciário Background" 
             className="w-full h-full object-cover opacity-30"
           />

@@ -44,7 +44,7 @@ const DireitoTrabalhista: React.FC = () => {
       <section className="relative pt-40 pb-20 bg-brand-navy text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/hero_lawyer_office_1776896316439.png" 
+            src="/hero-trabalhista.jpg" 
             alt="Direito Trabalhista Background" 
             className="w-full h-full object-cover opacity-30"
           />

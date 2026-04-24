@@ -44,7 +44,7 @@ const RegularizacaoImovel: React.FC = () => {
       <section className="relative pt-40 pb-20 bg-brand-navy text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/contract_signing_close_up_1776896414066.png" 
+            src="/hero-imoveis.jpg" 
             alt="Regularização de Imóvel Background" 
             className="w-full h-full object-cover opacity-30"
           />
