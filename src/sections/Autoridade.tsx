@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
-import { Quote } from 'lucide-react';
 import SectionTag from '../components/SectionTag';
 import { useReducedMotion } from '../hooks/useReducedMotion';
 
@@ -53,7 +52,6 @@ const Autoridade: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, index) => (
             <div key={index} className="testimonial-card bg-white p-8 rounded-3xl shadow-sm border border-brand-blue-border relative">
-              <Quote className="w-10 h-10 text-brand-blue/20 absolute top-8 right-8" />
               <p className="text-lg text-brand-navy-muted italic mb-8 leading-relaxed relative z-10">
                 "{t.text}"
               </p>

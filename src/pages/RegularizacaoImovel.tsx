@@ -41,8 +41,16 @@ const RegularizacaoImovel: React.FC = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="pt-40 pb-20 bg-brand-navy text-white">
-        <div className="max-w-7xl mx-auto text-center px-6">
+      <section className="relative pt-40 pb-20 bg-brand-navy text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/contract_signing_close_up_1776896414066.png" 
+            alt="Regularização de Imóvel Background" 
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy via-brand-navy/80 to-brand-navy/60" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto text-center px-6">
           <SectionTag className="!bg-white/10 !text-white mb-8 reveal-up">Regularização de Imóvel</SectionTag>
           <h1 className="text-4xl md:text-6xl font-semibold mb-8 leading-tight reveal-up">
             Seu imóvel não está no seu nome? A gente regulariza.
@@ -82,14 +90,23 @@ const RegularizacaoImovel: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <div className="bg-brand-blue-light p-12 rounded-[2rem] reveal-up">
-              <h3 className="text-2xl font-bold text-brand-navy mb-6">A Consequência da Inércia</h3>
-              <p className="text-lg text-brand-navy-muted leading-relaxed mb-8">
-                Sem regularização, o imóvel perde valor de mercado, não pode ser financiado, não serve como garantia em empréstimos, não pode ser vendido formalmente e pode gerar disputas familiares complicadas. Em casos mais graves, existe risco de perder o bem para terceiros ou para o Estado.
-              </p>
-              <div className="flex items-center gap-4 text-brand-navy font-bold">
-                <TriangleAlert className="w-8 h-8 text-brand-blue" />
-                <span>Imóvel irregular é patrimônio em risco.</span>
+            <div className="flex flex-col gap-8 reveal-up">
+              <div className="bg-brand-blue-light p-12 rounded-[2rem]">
+                <h3 className="text-2xl font-bold text-brand-navy mb-6">A Consequência da Inércia</h3>
+                <p className="text-lg text-brand-navy-muted leading-relaxed mb-8">
+                  Sem regularização, o imóvel perde valor de mercado, não pode ser financiado, não serve como garantia em empréstimos, não pode ser vendido formalmente e pode gerar disputas familiares complicadas. Em casos mais graves, existe risco de perder o bem para terceiros ou para o Estado.
+                </p>
+                <div className="flex items-center gap-4 text-brand-navy font-bold">
+                  <TriangleAlert className="w-8 h-8 text-brand-blue" />
+                  <span>Imóvel irregular é patrimônio em risco.</span>
+                </div>
+              </div>
+              <div className="rounded-[2rem] overflow-hidden h-64">
+                <img 
+                  src="/modern_office_hallway_1776896513845.png" 
+                  alt="Escritório Moderno" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

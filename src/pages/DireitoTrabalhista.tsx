@@ -41,8 +41,16 @@ const DireitoTrabalhista: React.FC = () => {
       </Helmet>
 
       {/* Hero Page */}
-      <section className="pt-40 pb-20 bg-brand-navy text-white">
-        <div className="max-w-7xl mx-auto text-center px-6">
+      <section className="relative pt-40 pb-20 bg-brand-navy text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/hero_lawyer_office_1776896316439.png" 
+            alt="Direito Trabalhista Background" 
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-navy via-brand-navy/80 to-brand-navy/60" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto text-center px-6">
           <SectionTag className="!bg-white/10 !text-white mb-8 reveal-up">Direito Trabalhista</SectionTag>
           <h1 className="text-4xl md:text-6xl font-semibold mb-8 leading-tight reveal-up">
             Foi demitido de forma irregular ou não recebeu o que é seu por direito?
