@@ -47,16 +47,16 @@ const Sobre: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-6">
           <div className="aspect-[4/5] overflow-hidden rounded-2xl reveal-up">
             <img 
-              src="/equipe-1.jpg" 
-              alt="Sócio Fundador" 
+              src="/equipe-2.jpg" 
+              alt="Equipe WA Advogados" 
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
               loading="lazy"
             />
           </div>
           <div className="aspect-[4/5] overflow-hidden rounded-2xl reveal-up">
             <img 
-              src="/equipe-2.jpg" 
-              alt="Equipe WA Advogados em reunião" 
+              src="/contract_signing_close_up_1776896414066.png" 
+              alt="Assinatura de Contrato" 
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
               loading="lazy"
             />
